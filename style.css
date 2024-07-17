@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* font-family: "Inter", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+/* font-family: "Oleo Script", system-ui; */
+
+
+/* univarsal selector */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+:root {
+    --primary-color: #FFFFFF;
+    --btn-color: #E6533C;
+    --gray-fifty: rgba(255, 255, 255, 0.5);
+}
+
+
+/* shared style */
+.btn {
+    color: var(--primary-color);
+    font-size: 18px;
+    padding: 16px 40px;
+    border-radius: 40px;
+    background-color: var(--btn-color);
+    border: none;
+    cursor: pointer;
+}
+/* shared style */
+
+
+
+/*---- header section ----*/
+.header {
+    width: 100vw;
+    /* background-color: rgba(0, 0, 0, 0.91); */
+    background: linear-gradient(95deg, rgba(18,18,18,1) 0%, rgba(29,29,29,1) 95%);
+}
+.navbar {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlinks {
+    display: flex;
+    gap: 47px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 5px;
+}
+.nav-item {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.menu {
+    display: none;
+    color: var(--primary-color);
+    font-size: 28px;
+    cursor: pointer;
+}
+.nav-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.home {
+    padding: 12px 24px;
+    background-color: var(--btn-color);
+    border-radius: 47px;
+}
+.about {
+    margin-right: 10px;
+}
+.logo {
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--btn-color);
+}
+
+.banner-img {
+    position: relative;
+}
+
+.banner {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-text {
+    flex-basis: 50%;
+}
+
+.banenr-img img {
+    width: 80%;
+    height: 80%;
+}
+.banner-title {
+    font-size: 70px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+.banner-title span {
+    font-family: "Oleo Script", system-ui;
+}
+
+.banner-des {
+    margin: 25px 0;
+    font-size: 16px;
+    color: var(--gray-fifty);
+}
+
+.button {
+    display: flex;
+    gap: 14px;
+    flex-direction: row;
+}
+.down-btn {
+    background: transparent;
+    border: 1px solid var(--gray-fifty);
+}
+.banenr-img {
+    flex-basis: 40%;
+    position: relative;
+}
+.work-out {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    width: 140px;
+    padding: 15px;
+}
+.work-out h2 {
+    font-size: 40px;
+    width: 900;
+    color: var(--primary-color);
+}
+.work-out p {
+    font-size: 13px;
+    color: var(--gray-fifty);
+}
+.tutorial {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: -100px;
+    bottom: 85px;
+}
+.workout {
+    position: absolute;
+    top: 135px;
+    left: 250px;
+}
+.video-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--btn-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+.tutorial-content h2{
+    font-size: 24px;
+}
+.tutorial p {
+    font-size: 16px;
+}
+
+/*---- header section ----*/
+
+
+/*---- header section ----*/
+/*---- header section ----*/
+
+@media  screen and (max-width: 576px) {
+
+    .banner {
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .navlinks {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .banner-title {
+        font-size: 50px;
+    }
+    .banner-img {
+        margin: 0 auto;
+    }
+    .tutorial {
+        left: -50px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner {
+        flex-direction: column;   
+    }
+    .navlinks {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
