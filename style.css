@@ -16,6 +16,7 @@
 
 body {
     font-family: "Inter", sans-serif;
+    background-color: black;
 }
 :root {
     --primary-color: #FFFFFF;
@@ -91,6 +92,7 @@ body {
 
 .banner-img {
     position: relative;
+    margin-bottom: -3px;
 }
 
 .banner {
@@ -187,8 +189,94 @@ body {
 /*---- header section ----*/
 
 
-/*---- header section ----*/
-/*---- header section ----*/
+/*---- habit section ----*/
+.habit {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.habit-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.87rem;
+    color: var(--primary-color);
+}
+.habit-des {
+    text-align: center;
+    font-size: 0.87rem;
+    margin-bottom: 3.3rem;
+    color: var(--gray-fifty);
+}
+.habit-container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.habit-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.habit-box img {
+    border-radius: 50%;
+    margin-bottom: 1.8rem;
+}
+.habit-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.habit-box p {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--gray-fifty);
+}
+/*---- habit section ----*/
+
+/*---- extra miles section ----*/
+.extra-miles {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 40px;
+    display: flex;
+    gap: 3.75rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(34,34,34);     
+}
+.extra-miles-content {
+    flex-basis: 50%;
+}
+.extra-miles-img {
+     flex-basis: 40%;
+}
+.extra-miles-img img {
+    width: 100%;
+    height: 320px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.extra-miles-title {
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-bottom: 0.87rem;
+}
+.extra-liles-des {
+    font-size: 0.87rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.12rem;
+    color: var(--gray-fifty);
+}
+
+/*---- hextra miles section ----*/
 
 @media  screen and (max-width: 576px) {
 
@@ -212,6 +300,19 @@ body {
     .tutorial {
         left: -50px;
     }
+
+
+    .habit-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .habit-title {
+        font-size: 2.5rem;
+    }
+    .extra-miles {
+        flex-direction: column;
+        gap: 2rem;
+    }
+   
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .banner {
@@ -222,6 +323,10 @@ body {
     }
     .menu {
         display: block;
+    }
+
+    .habit-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
