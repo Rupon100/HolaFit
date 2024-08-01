@@ -28,13 +28,15 @@ body {
 /* shared style */
 .btn {
     color: var(--primary-color);
-    font-size: 18px;
-    padding: 16px 40px;
+    font-size: 1.1rem;
+    padding: 14px 40px;
     border-radius: 40px;
     background-color: var(--btn-color);
     border: none;
     cursor: pointer;
 }
+
+
 /* shared style */
 
 
@@ -337,6 +339,147 @@ body {
 }
 /*---- hextra miles section ----*/
 
+/*---- Bmi section ----*/
+.bmi {
+    color: var(--primary-color);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bmi-content {
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+.bmi-content h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+.bmi-content p {
+    font-size: 0.87rem;
+    color: var(--gray-fifty);
+    line-height: 1.3rem;
+}
+
+.bmi-calculator {
+    width: 100%;
+    margin: 80px 0;
+    padding: 50px 150px;
+    background-color: rgb(34,34,34);
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.table-caption {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+.bmi-table table {
+    width: 100%;
+    border: 1px solid var(--gray-fifty);
+    border-collapse: collapse;
+}
+table th,td {
+    border: 1px solid var(--gray-fifty);
+    text-align: left;
+    padding: 15px 25px;
+}
+table th {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+table td {
+    color: var(--gray-fifty);
+    font-size: 0.87rem;
+}
+
+
+.bmi-calculate-box {
+    max-width: 590px;
+}
+.bmi-calculate-box h2 {
+    margin-bottom: 0.8rem;
+}
+.bmi-calculate-box p {
+    font-size: 0.8rem;
+    color: var(--gray-fifty);
+    margin-bottom: 2rem;
+    line-height: 1.3rem;
+}
+/* form  input, select {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+} */
+.form-first-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+/* .form-first-row input, select {
+    flex-basis: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+} */
+.form-first-row input::placeholder {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+ }
+
+input[type="text"],
+select {
+    width: 50%;
+    border-radius: 8px;
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    color: var(--gray-fifty);
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+}
+select option {
+    color:  rgb(91, 90, 90);
+}
+
+
+
+/* select > option {
+    color:  rgb(91, 90, 90);
+}
+select:focus,
+select option:checked {
+    color: gray;
+} */
+/* select option[disabled] {
+    color: gray;
+} */
+
+
+
+.activity {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+select.activity option:disabled {
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+ 
+
+/*---- Bmi section ----*/
+
 
 
 
@@ -398,6 +541,27 @@ body {
         margin: 5px;
     }
    
+
+   
+    /* .bmi-content {
+        text-align: left;
+        width: 50%;
+        margin: 0 auto;
+    } */
+    .bmi-content {
+        margin-left: 40px;
+    }
+    .bmi-calculator {
+        margin: 40px;
+        flex-direction: column;
+        padding: 40px;
+    }
+    .bmi-content h1 {
+        font-size: 2rem;
+    }
+    .table-caption {
+        font-size: 1rem;
+    }
      
     
 }
@@ -430,6 +594,12 @@ body {
     }
     .food-btn:hover {
         padding: 14px 34px;
+    }
+    .bmi-calculator {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px 20px;   
+        gap: 40px;
     }
 }
 
