@@ -381,6 +381,7 @@ body {
     color: var(--primary-color);
     margin-bottom: 3rem;
 }
+
 .bmi-table table {
     width: 100%;
     border: 1px solid var(--gray-fifty);
@@ -481,6 +482,57 @@ select.activity option:disabled {
 /*---- Bmi section ----*/
 
 
+/*---- Team section ----*/
+.team {
+    max-width: 80%;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+.team-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+}
+.team-des {
+    text-align: center;
+    font-size: 0.87rem;
+    color: var(--gray-fifty);
+}
+.gallery-box {
+    margin-top: 3.1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1.1rem;
+    padding: 1.4rem;
+    display: grid;
+    gap: 1.4rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.trainer-box {
+    position: relative;
+}
+.member-content {
+    position: absolute;
+    left: 1.2rem;
+    bottom: 1.2rem;
+}
+.trainer-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: center;
+    border-radius: 1rem;
+    opacity: 0.7;
+}
+.name {
+    font-size: 1.4rem;
+}
+.position {
+    font-size: 1rem;
+    color: var(--gray-fifty);
+}
+/*---- Team section ----*/
+
+
 
 
 
@@ -562,7 +614,41 @@ select.activity option:disabled {
     .table-caption {
         font-size: 1rem;
     }
-     
+    .bmi-table h3 {
+        margin-bottom: 20px;
+    }
+
+
+    .team-title {
+        font-size: 2rem;
+    }
+    .gallery-box {
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 2.2rem;
+    }
+    /* .trainer-box {
+        width: 100%;
+        height: 272px;
+    }
+    .trainer-box img {
+        object-fit: cover;
+        object-position: center;
+    } */
+    .trainer-box {
+        width: 100%;
+        max-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainer-box img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .hidden-box {
+        display: none;
+    }
+    
     
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -600,6 +686,11 @@ select.activity option:disabled {
         align-items: flex-start;
         padding: 50px 20px;   
         gap: 40px;
+    }
+
+
+    .gallery-box {
+        grid-template-columns: repeat(3,1fr);
     }
 }
 
