@@ -590,9 +590,10 @@ select.activity option:disabled {
         margin-left: 40px;
     }
     .bmi-calculator {
-        margin: 40px;
         flex-direction: column;
+        margin: 40px;
         padding: 40px;
+        align-items: self-start;
     }
     .bmi-content h1 {
         font-size: 2rem;
