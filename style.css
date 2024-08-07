@@ -46,6 +46,7 @@ body {
     width: 100vw;
     /* background-color: rgba(0, 0, 0, 0.91); */
     background: linear-gradient(95deg, rgba(18,18,18,1) 0%, rgba(29,29,29,1) 95%);
+    
 }
 .navbar {
     max-width: 80%;
@@ -87,7 +88,7 @@ body {
     margin-right: 10px;
 }
 .logo {
-    font-size: 34px;
+    font-size: 2.2rem;
     font-weight: 800;
     color: var(--btn-color);
 }
@@ -532,6 +533,66 @@ select.activity option:disabled {
 }
 /*---- Team section ----*/
 
+/*---- header ----*/
+.footer {
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin-top: 5rem;
+    color: var(--primary-color);
+}
+.footer-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-des {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+.link {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.link-title {
+    font-size: 1.6rem;
+    margin-bottom: 2.75rem;
+}
+.footer-links {
+    list-style-type: none;
+}
+.footer-links li a {
+    text-decoration: none;
+    color: var(--gray-fifty);
+}
+.footer-links li {
+    margin-bottom: 1.1rem;
+}
+.copyright {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2.1rem;
+    text-align: center;
+}
+.copyright hr {
+    margin-bottom: 2.1rem;
+}
+.copyright span {
+    font-size: 1.2rem;
+    color: var(--gray-fifty);
+}
+.footer-logo {
+    font-size: 3.5rem;
+}
+/* .about-compo {
+    margin-top: -2rem;
+} */
+/*---- header ----*/
+
 
 
 
@@ -647,6 +708,15 @@ select.activity option:disabled {
     }
     .hidden-box {
         display: none;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-logo {
+        font-size: 2.2rem;
     }
     
     
