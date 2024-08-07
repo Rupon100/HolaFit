@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
 /* font-family: "Inter", sans-serif; */
 
+@import url('https://fonts.cdnfonts.com/css/miama');
+/*font-family: 'Miama', sans-serif;*/
+
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
-
 /* font-family: "Oleo Script", system-ui; */
-
 
 /* univarsal selector */
 * {
@@ -13,7 +13,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: "Inter", sans-serif;
     background-color: black;
@@ -23,7 +22,6 @@ body {
     --btn-color: #E6533C;
     --gray-fifty: rgba(255, 255, 255, 0.5);
 }
-
 
 /* shared style */
 .btn {
@@ -35,18 +33,13 @@ body {
     border: none;
     cursor: pointer;
 }
-
-
 /* shared style */
-
-
 
 /*---- header section ----*/
 .header {
     width: 100vw;
     /* background-color: rgba(0, 0, 0, 0.91); */
-    background: linear-gradient(95deg, rgba(18,18,18,1) 0%, rgba(29,29,29,1) 95%);
-    
+    background: linear-gradient(95deg, rgba(18,18,18,1) 0%, rgb(17, 17, 17) 95%);
 }
 .navbar {
     max-width: 80%;
@@ -66,13 +59,13 @@ body {
 }
 .nav-item {
     list-style: none;
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 600;
 }
 .menu {
     display: none;
     color: var(--primary-color);
-    font-size: 28px;
+    font-size: 1.75;
     cursor: pointer;
 }
 .nav-link {
@@ -95,9 +88,8 @@ body {
 
 .banner-img {
     position: relative;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
-
 .banner {
     max-width: 80%;
     margin: 0 auto;
@@ -108,26 +100,25 @@ body {
 .banner-text {
     flex-basis: 50%;
 }
-
 .banenr-img img {
     width: 80%;
     height: 80%;
 }
 .banner-title {
-    font-size: 70px;
+    font-size: 4.37rem;
     font-weight: 900;
     color: var(--primary-color);
 }
 .banner-title span {
-    font-family: "Oleo Script", system-ui;
+    font-family: 'Miama', sans-serif;
+    font-size: 6rem;
+    line-height: 5rem;
 }
-
 .banner-des {
     margin: 25px 0;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--gray-fifty);
 }
-
 .button {
     display: flex;
     gap: 14px;
@@ -150,12 +141,12 @@ body {
     padding: 15px;
 }
 .work-out h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     width: 900;
     color: var(--primary-color);
 }
 .work-out p {
-    font-size: 13px;
+    font-size: 0.81rem;
     color: var(--gray-fifty);
 }
 .tutorial {
@@ -183,14 +174,12 @@ body {
     color: var(--primary-color);
 }
 .tutorial-content h2{
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .tutorial p {
-    font-size: 16px;
+    font-size: 1rem;
 }
-
 /*---- header section ----*/
-
 
 /*---- habit section ----*/
 .habit {
@@ -218,7 +207,6 @@ body {
     gap: 40px;
     grid-template-columns: repeat(4, 1fr);
 }
-
 .habit-box {
     display: flex;
     flex-direction: column;
@@ -278,15 +266,7 @@ body {
     margin-bottom: 2.12rem;
     color: var(--gray-fifty);
 }
-
 /*---- hextra miles section ----*/
-
-
-
-
-
-
-
 
 /*---- hextra miles section ----*/
 .food {
@@ -364,7 +344,6 @@ body {
     color: var(--gray-fifty);
     line-height: 1.3rem;
 }
-
 .bmi-calculator {
     width: 100%;
     margin: 80px 0;
@@ -375,14 +354,12 @@ body {
     justify-content: space-between;
     align-items: center;
 }
- 
 .table-caption {
     font-size: 1.7rem;
     font-weight: 900;
     color: var(--primary-color);
     margin-bottom: 3rem;
 }
-
 .bmi-table table {
     width: 100%;
     border: 1px solid var(--gray-fifty);
@@ -401,8 +378,6 @@ table td {
     color: var(--gray-fifty);
     font-size: 0.87rem;
 }
-
-
 .bmi-calculate-box {
     max-width: 590px;
 }
@@ -415,11 +390,6 @@ table td {
     margin-bottom: 2rem;
     line-height: 1.3rem;
 }
-/* form  input, select {
-    border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
-} */
 .form-first-row {
     display: flex;
     gap: 15px;
@@ -427,10 +397,6 @@ table td {
     align-items: center;
     margin-bottom: 15px;
 }
-/* .form-first-row input, select {
-    flex-basis: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-} */
 .form-first-row input::placeholder {
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.6);
@@ -450,38 +416,16 @@ select {
 select option {
     color:  rgb(91, 90, 90);
 }
-
-
-
-/* select > option {
-    color:  rgb(91, 90, 90);
-}
-select:focus,
-select option:checked {
-    color: gray;
-} */
-/* select option[disabled] {
-    color: gray;
-} */
-
-
-
 .activity {
     width: 100%;
     margin-bottom: 15px;
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-
-
 select.activity option:disabled {
     margin-bottom: 15px;
     background-color: rgba(255, 255, 255, 0.1);
 }
- 
-
 /*---- Bmi section ----*/
-
 
 /*---- Team section ----*/
 .team {
@@ -588,24 +532,11 @@ select.activity option:disabled {
 .footer-logo {
     font-size: 3.5rem;
 }
-/* .about-compo {
-    margin-top: -2rem;
-} */
 /*---- header ----*/
 
-
-
-
-
-
-
-
 @media  screen and (max-width: 576px) {
-
     .banner {
         flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
     }
     .navlinks {
         display: none;
@@ -614,15 +545,14 @@ select.activity option:disabled {
         display: block;
     }
     .banner-title {
-        font-size: 50px;
+        font-size: 3.12rem;
     }
     .banner-img {
-        margin: 0 auto;
+        margin-bottom: -4px;
     }
     .tutorial {
         left: -50px;
     }
-
 
     .habit-container {
         grid-template-columns: repeat(1, 1fr);
@@ -634,10 +564,12 @@ select.activity option:disabled {
         flex-direction: column;
         gap: 2rem;
     }
+    .extra-miles-img img {
+        height: auto;
+    }
     .extra-miles-title {
         font-size: 2.2rem;
     }
-
 
     .food-btn {
         padding: 5px 20px;
@@ -654,13 +586,6 @@ select.activity option:disabled {
         margin: 5px;
     }
    
-
-   
-    /* .bmi-content {
-        text-align: left;
-        width: 50%;
-        margin: 0 auto;
-    } */
     .bmi-content {
         margin-left: 40px;
     }
@@ -679,7 +604,6 @@ select.activity option:disabled {
         margin-bottom: 20px;
     }
 
-
     .team-title {
         font-size: 2rem;
     }
@@ -687,14 +611,6 @@ select.activity option:disabled {
         grid-template-columns: repeat(1,1fr);
         margin-top: 2.2rem;
     }
-    /* .trainer-box {
-        width: 100%;
-        height: 272px;
-    }
-    .trainer-box img {
-        object-fit: cover;
-        object-position: center;
-    } */
     .trainer-box {
         width: 100%;
         max-height: 300px;
@@ -710,16 +626,13 @@ select.activity option:disabled {
         display: none;
     }
 
-
     .footer-container {
         flex-direction: column;
         align-items: flex-start;
     }
     .footer-logo {
         font-size: 2.2rem;
-    }
-    
-    
+    }  
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .banner {
@@ -731,11 +644,9 @@ select.activity option:disabled {
     .menu {
         display: block;
     }
-
     .habit-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
 
     .food-btn {
         padding: 10px 25px;
@@ -758,22 +669,7 @@ select.activity option:disabled {
         gap: 40px;
     }
 
-
     .gallery-box {
         grid-template-columns: repeat(3,1fr);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
