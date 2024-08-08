@@ -535,6 +535,10 @@ select.activity option:disabled {
 /*---- header ----*/
 
 @media  screen and (max-width: 576px) {
+    .btn {
+        font-size: 0.9rem;
+        padding: 14px 40px;
+    }
     .banner {
         flex-direction: column;
     }
@@ -550,8 +554,19 @@ select.activity option:disabled {
     .banner-img {
         margin-bottom: -4px;
     }
+    .workout {
+        position: absolute;
+        top: 135px;
+        left: 210px;
+    }
+    .work-out h2 {
+        font-size: 2.3rem;
+    }
     .tutorial {
-        left: -50px;
+        left: -1px;
+    }
+    .tutorial-content h2 {
+        font-size: 1.5rem;
     }
 
     .habit-container {
