@@ -37,7 +37,7 @@ body {
 
 /*---- header section ----*/
 .header {
-    width: 100vw;
+    width: 100%;
     /* background-color: rgba(0, 0, 0, 0.91); */
     background: linear-gradient(95deg, rgba(18,18,18,1) 0%, rgb(17, 17, 17) 95%);
 }
