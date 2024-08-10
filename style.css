@@ -83,6 +83,7 @@ body {
     font-size: 2.2rem;
     font-weight: 800;
     color: var(--btn-color);
+    transform: skewX(-6deg);
 }
 
 .banner-img {
@@ -581,7 +582,7 @@ select.activity option:disabled {
         display: block;
     }
     .banner-title {
-        font-size: 3.12rem;
+        font-size: 3.5rem;
     }
     .banner-img {
         margin-bottom: -4px;
